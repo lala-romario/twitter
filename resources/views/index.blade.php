@@ -1,22 +1,40 @@
 @extends('layouts.layout')
 
 @section('menu-col')
-<div class=" ml-80 flex flex-col">
-    <h1 class=" rounded-full hover:bg-neutral-900 duration-300">
-        <a href="" class="">
-            <div>
-                <img src="{{ assets('twitter-logo.png') }}" alt="">
-            </div>
-        </a>
-</h1>
+<div class=" ml-85 mt-2 flex flex-col">
+
+    <a href="" class="">
+        <img src="{{ asset('images/icons8-twitter-96.svg') }}" alt="twitter-logo" class="w-12 h-12 p-2 text-white rounded-full -mr-2 hover:bg-neutral-900 duration-300">
+    </a>
+
     @foreach($menus as $menu)
-    <a href="" class="flex w-30 ">
+    <a href="" class="flex w-50 ">
         <div class="flex  py-3 rounded-full hover:bg-neutral-900 duration-300">
             {!! $menu['icon'] !!}
             <span class="text-white text-xl px-5">{{ $menu['label'] }}</span>
         </div>
     </a>
     @endforeach
+
+    <a href="" class="bg-white mt-5 w-53 p-3 font text-center rounded-full hover:bg-gray-200 duration-300">
+        <span class="">Post</span>
+    </a>
+
+    <a href="" class="flex mr-4">
+        <div class="flex mt-8 p-2 items-center hover:bg-neutral-900 rounded-full">
+            <img src="{{ asset('20250527_1609_image.png') }}" alt="" class="w-15 h-10 object-cover rounded-full">
+            <div class="ml-3">
+                <span class="text-white text-sm font-bold">Lala Romario MAM</span>
+                <span class="text-gray-600 text-sm">@MamonjyLala</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white mr-2 lucide lucide-ellipsis-icon lucide-ellipsis">
+                <circle cx="12" cy="12" r="1" />
+                <circle cx="19" cy="12" r="1" />
+                <circle cx="5" cy="12" r="1" />
+            </svg>
+
+        </div>
+    </a>
 </div>
 @endsection
 
