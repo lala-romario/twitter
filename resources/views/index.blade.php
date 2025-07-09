@@ -65,7 +65,7 @@
 </div> -->
 
 <div class="flex ">
-    <div class="flex h-12 border-b-2 border-gray-900">
+    <div class="flex h-12 border-b-1 border-neutral-800">
         <a href="" class="flex  items-center text-white hover:bg-neutral-900 duration-400">
             <div class="flex lg:w-69.5 md:w-40 justify-center">
                 <div class="flex ">
@@ -83,14 +83,14 @@
     </div>
 </div>
 
-<div class="flex p-4">
-    <img src="{{ asset('20250527_1609_image.png') }}" alt="" class="w-12 h-12 object-cover rounded-full mt-2">
-    <div class="flex ml-2 pt-5 border-b-1 border-gray-500 w-105 p-6">
-        <input type="search" placeholder="What's happening?" class="text-white outline-none hover:outline-none w-105">
+<div class="flex p-2">
+    <img src="{{ asset('20250527_1609_image.png') }}" alt="" class="w-12 h-12 ml-2 object-cover rounded-full mt-2">
+    <div class="flex pt-5 border-b-1 border-gray-500 w-105 pt-5 pb-5 pl-2">
+        <input type="search" placeholder="What's happening?" class="text-white text-lg outline-none hover:outline-none w-105">
     </div>
 </div>
 
-<div class="flex pt-3 space-x-40">
+<div class="flex pt-3 space-x-40 border-b-1 border-neutral-800 p-1">
     <div class="flex ml-18 space-x-2">
         <a href="" class="flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide text-sky-700 lucide-book-image-icon lucide-book-image">
@@ -150,8 +150,72 @@
 @endsection
 
 @section('search-col')
-<div class="">
+<div class="h-20">
+    <div>
+        <input type="search" placeholder="    Search" class="mt-1.5 ml-4 text-white text-sm w-80 outline-none border border-neutral-800 p-2 rounded-full">
+    </div>
+</div>
 
-    <h1 class="text-white">ndqhUCJKLCDJMS</h1>
+<div class="ml-4 -mt-5 w-80 border border-neutral-800 rounded-lg p-4">
+    <div>
+        <h2 class="text-white font-semibold">
+            Subscribe to Premium
+        </h2>
+    </div>
+
+    <div>
+        <p class="text-white text-sm pt-2 pb-2">
+            Subscribe to unlock new features and if eligible,
+            receive a share of revenue.
+        </p>
+    </div>
+
+    <a href="" class="flex justify-center font-bold w-25 bg-sky-500 mt-1 p-1.5 rounded-full hover:bg-sky-600">
+        <span class="text-white text-sm">Subscribe</span>
+    </a>
+</div>
+
+<div class="border border-neutral-800 mt-4 ml-4 rounded-lg pt-2 ">
+    <div class="">
+        <h2 class="text-white font-semibold ml-4">What's happening</h2>
+    </div>
+    <div class="flex  mt-5 hover:bg-neutral-900 p-2">
+        <img src="{{ asset('20250527_1609_image.png') }}" alt="" class="w-18 h-15 object-cover rounded-md ml-2">
+        <div class="ml-3">
+            <h2 class="text-white text-sm font-semibold">
+                NFL Top 100 Countdown
+            </h2>
+            <span class="text-sm text-neutral-500">Live</span>
+        </div>
+    </div>
+
+    <div class="flex hover:bg-neutral-900 p-2">
+        <div class="ml-2">
+            <p class="text-sm text-neutral-500">
+                Trending in Madagascar
+            </p>
+            <p class="text-sm text-white font-semibold">#farthose</p>
+        </div>
+
+        <a href="" class="ml-26">
+            <div class=" rounded-full hover:bg-sky-950 p-2 duration-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide text-neutral-500 lucide-ellipsis-icon lucide-ellipsis">
+                    <circle cx="12" cy="12" r="1" />
+                    <circle cx="19" cy="12" r="1" />
+                    <circle cx="5" cy="12" r="1" />
+                </svg>
+            </div>
+        </a>
+    </div>
+
+    <div class="hover:bg-neutral-900 pb-4">
+        <a href="" class="text-sky-600 text-sm ml-4 w-full -mt-1">
+            <div class="w-full ">
+                <p class="ml-4">
+                    Show more
+                </p>
+            </div>
+        </a>
+    </div>
 </div>
 @endsection
