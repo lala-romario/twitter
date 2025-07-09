@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('menu-col')
-<div class=" ml-85 mt-2 flex flex-col">
+<div class=" lg:ml-70 md:50 mt-1 flex flex-col">
 
     <a href="" class="">
         <img src="{{ asset('images/icons8-twitter-96.svg') }}" alt="twitter-logo" class="w-12 h-12 p-2 text-white rounded-full -mr-2 hover:bg-neutral-900 duration-300">
@@ -21,7 +21,7 @@
     </a>
 
     <a href="" class="flex mr-4">
-        <div class="flex mt-8 p-2 items-center hover:bg-neutral-900 rounded-full">
+        <div class="flex mt-4 p-2 items-center hover:bg-neutral-900 rounded-full">
             <img src="{{ asset('20250527_1609_image.png') }}" alt="" class="w-15 h-10 object-cover rounded-full">
             <div class="ml-3">
                 <span class="text-white text-sm font-bold">Lala Romario MAM</span>
@@ -39,7 +39,7 @@
 @endsection
 
 @section('posts-col')
-
+<!--
 <div class="border-b-1 border-gray-800">
     <div class="">
         <div>
@@ -62,13 +62,96 @@
         <a href="" class="text-gray-600 hover:bg-gray-700 py-4 flex justify-center hover:bg-neutral-900 duration-400">Entertainment</a>
     </div>
 
+</div> -->
+
+<div class="flex ">
+    <div class="flex h-12 border-b-2 border-gray-900">
+        <a href="" class="flex  items-center text-white hover:bg-neutral-900 duration-400">
+            <div class="flex lg:w-69.5 md:w-40 justify-center">
+                <div class="flex ">
+                    <span class="font-semibold text-sm">For You</span>
+                </div>
+            </div>
+        </a>
+        <a href="" class="flex text-white items-center hover:bg-neutral-900 duration-400">
+            <div class="flex justify-center lg:w-70 md:w-40">
+                <div class="flex">
+                    <span class="text-sm font-semibold">Following</span>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="flex p-4">
+    <img src="{{ asset('20250527_1609_image.png') }}" alt="" class="w-12 h-12 object-cover rounded-full mt-2">
+    <div class="flex ml-2 pt-5 border-b-1 border-gray-500 w-105 p-6">
+        <input type="search" placeholder="What's happening?" class="text-white outline-none hover:outline-none w-105">
+    </div>
+</div>
+
+<div class="flex pt-3 space-x-40">
+    <div class="flex ml-18 space-x-2">
+        <a href="" class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide text-sky-700 lucide-book-image-icon lucide-book-image">
+                <path d="m20 13.7-2.1-2.1a2 2 0 0 0-2.8 0L9.7 17" />
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+                <circle cx="10" cy="8" r="2" />
+            </svg>
+        </a>
+        <a href="" class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5.5 text-sky-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 8.25v7.5m6-7.5h-3V12m0 0v3.75m0-3.75H18M9.75 9.348c-1.03-1.464-2.698-1.464-3.728 0-1.03 1.465-1.03 3.84 0 5.304 1.03 1.464 2.699 1.464 3.728 0V12h-1.5M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+            </svg>
+        </a>
+        <a href="" class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sky-700 ml-2 lucide lucide-chart-pie-icon lucide-chart-pie">
+                <path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z" />
+                <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
+            </svg>
+        </a>
+        <a href="" class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide text-sky-700 lucide-vote-icon lucide-vote">
+                <path d="m9 12 2 2 4-4" />
+                <path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z" />
+                <path d="M22 19H2" />
+            </svg>
+        </a>
+        <a href="" class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide text-sky-700 lucide-smile-icon lucide-smile">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                <line x1="9" x2="9.01" y1="9" y2="9" />
+                <line x1="15" x2="15.01" y1="9" y2="9" />
+            </svg>
+        </a>
+        <a href="" class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide text-sky-700 lucide-calendar-check-icon lucide-calendar-check">
+                <path d="M8 2v4" />
+                <path d="M16 2v4" />
+                <rect width="18" height="18" x="3" y="4" rx="2" />
+                <path d="M3 10h18" />
+                <path d="m9 16 2 2 4-4" />
+            </svg>
+        </a>
+
+        <span class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide text-sky-900 lucide-map-pin-icon lucide-map-pin">
+                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                <circle cx="12" cy="10" r="3" />
+            </svg>
+        </span>
+    </div>
+    <a href="" class="flex justify-center text-bold items-center bg-white p-2 rounded-full w-16 h-8">
+        <span class="text-sm font-semibold">Post</span>
+    </a>
 </div>
 
 @endsection
 
 @section('search-col')
-<div class="bg-white">
+<div class="">
 
-    <h1>ndqhUCJKLCDJMS</h1>
+    <h1 class="text-white">ndqhUCJKLCDJMS</h1>
 </div>
 @endsection
