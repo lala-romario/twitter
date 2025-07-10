@@ -8,10 +8,10 @@
     </a>
 
     @foreach($menus as $menu)
-    <a href="" class="flex w-50 ">
-        <div class="flex  py-3 rounded-full hover:bg-neutral-900 duration-300">
+    <a href="" class="flex  ">
+        <div class="flex  py-2 rounded-full hover:bg-neutral-900 duration-300">
             {!! $menu['icon'] !!}
-            <span class="text-white text-xl px-5">{{ $menu['label'] }}</span>
+            <span class="text-white text-lg px-5">{{ $menu['label'] }}</span>
         </div>
     </a>
     @endforeach
@@ -142,8 +142,8 @@
             </svg>
         </span>
     </div>
-    <a href="" class="flex justify-center text-bold items-center bg-white p-2 rounded-full w-16 h-8">
-        <span class="text-sm font-semibold">Post</span>
+    <a href="" class="flex justify-center text-bold items-center bg-white p-2 rounded-full w-16 h-8" >
+        <button class="text-sm font-semibold cursor-pointer" >Post</button>
     </a>
 </div>
 
@@ -197,7 +197,7 @@
             <p class="text-sm text-white font-semibold">#farthose</p>
         </div>
 
-        <a href="" class="ml-26">
+        <a href="" class="ml-19">
             <div class=" rounded-full hover:bg-sky-950 p-2 duration-500">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide text-neutral-500 lucide-ellipsis-icon lucide-ellipsis">
                     <circle cx="12" cy="12" r="1" />
